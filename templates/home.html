@@ -1,0 +1,39 @@
+{%load static%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Boards</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+<div class="container">
+    <ol class="breadcrumb my-5">
+        <li class="breadcrumb-item active">Boards</li>
+    </ol>
+    <table class="table">
+        <thead class="thead-dark">
+        <tr>
+            <th>Board</th>
+            <th>Posts</th>
+            <th>Topics</th>
+            <th>Last Post</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for board in boards %}
+        <tr>
+            <td>
+                <a href="{% url 'board_topics' board.pk%}"> {{board.name}} </a>
+                <small class="text-muted d-block">{{board.description}}</small>
+            </td>
+            <td>0</td>
+            <td>0</td>
+            <td></td>
+        </tr>
+        {%endfor%}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
