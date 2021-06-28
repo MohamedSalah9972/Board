@@ -1,17 +1,10 @@
-{%load static%}
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>{{board.name}}</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-</head>
-<body>
-<div class="container">
-    <ol class="breadcrumb my-5">
-        <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
-        <li class="breadcrumb-item active">{{board.name}}</li>
-    </ol>
-</div>
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %} {{board.name}} {% endblock %}
+
+{% block breadcrumb %}
+    <li class="breadcrumb-item"><a href="{% url 'home' %}">Boards</a></li>
+    <li class="breadcrumb-item active">{{board.name}}</li>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
