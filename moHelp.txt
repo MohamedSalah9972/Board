@@ -1,3 +1,5 @@
 venv/Scripts/activate
+mypthon\Scripts\activate
+
 
 py manage.py runserver
