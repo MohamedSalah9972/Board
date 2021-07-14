@@ -4,10 +4,7 @@ from boards.models import Topic
 from boards.models import Post
 from import_export import resources
 
-
 # Register your models here.
-class TopicR(resources.ModelResource):
-    pass
 
 
 admin.site.register(Board)
