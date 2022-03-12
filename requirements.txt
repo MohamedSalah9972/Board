@@ -1,2 +1,5 @@
 Django
 psycopg2-binary>=2.8
+django-widget-tweaks
+djangorestframework
+django-import-export
