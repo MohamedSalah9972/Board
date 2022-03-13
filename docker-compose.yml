@@ -1,0 +1,27 @@
+version: "3.9"
+   
+services:
+  db:
+    image: postgres
+    environment:
+      - POSTGRES_DB=
+      - POSTGRES_USER=
+      - POSTGRES_PASSWORD=
+    networks:
+      - discussion_network
+    ports:
+      - 5432
+  web:
+    build: .
+    command: python /code/manage.py runserver 0.0.0.0:8000
+    ports:
+      - "8000:8000"
+    networks:
+      - discussion_network
+    links:
+      - db:db
+    depends_on:
+      - db
+networks:
+  discussion_network:
+    driver: bridge
