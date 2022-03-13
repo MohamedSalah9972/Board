@@ -1,0 +1,55 @@
+Attaching to discussion-board_db_1
+[36mdb_1   |[0m The files belonging to this database system will be owned by user "postgres".
+[36mdb_1   |[0m This user must also own the server process.
+[36mdb_1   |[0m 
+[36mdb_1   |[0m The database cluster will be initialized with locale "en_US.utf8".
+[36mdb_1   |[0m The default database encoding has accordingly been set to "UTF8".
+[36mdb_1   |[0m The default text search configuration will be set to "english".
+[36mdb_1   |[0m 
+[36mdb_1   |[0m Data page checksums are disabled.
+[36mdb_1   |[0m 
+[36mdb_1   |[0m fixing permissions on existing directory /var/lib/postgresql/data ... ok
+[36mdb_1   |[0m creating subdirectories ... ok
+[36mdb_1   |[0m selecting dynamic shared memory implementation ... posix
+[36mdb_1   |[0m selecting default max_connections ... 100
+[36mdb_1   |[0m selecting default shared_buffers ... 128MB
+[36mdb_1   |[0m selecting default time zone ... Etc/UTC
+[36mdb_1   |[0m creating configuration files ... ok
+[36mdb_1   |[0m running bootstrap script ... ok
+[36mdb_1   |[0m performing post-bootstrap initialization ... ok
+[36mdb_1   |[0m syncing data to disk ... ok
+[36mdb_1   |[0m 
+[36mdb_1   |[0m 
+[36mdb_1   |[0m Success. You can now start the database server using:
+[36mdb_1   |[0m 
+[36mdb_1   |[0m     pg_ctl -D /var/lib/postgresql/data -l logfile start
+[36mdb_1   |[0m 
+[36mdb_1   |[0m initdb: warning: enabling "trust" authentication for local connections
+[36mdb_1   |[0m You can change this by editing pg_hba.conf or using the option -A, or
+[36mdb_1   |[0m --auth-local and --auth-host, the next time you run initdb.
+[36mdb_1   |[0m waiting for server to start....2022-03-13 14:25:06.569 UTC [49] LOG:  starting PostgreSQL 14.1 (Debian 14.1-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+[36mdb_1   |[0m 2022-03-13 14:25:06.619 UTC [49] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb_1   |[0m 2022-03-13 14:25:06.788 UTC [50] LOG:  database system was shut down at 2022-03-13 14:25:05 UTC
+[36mdb_1   |[0m 2022-03-13 14:25:06.834 UTC [49] LOG:  database system is ready to accept connections
+[36mdb_1   |[0m  done
+[36mdb_1   |[0m server started
+[36mdb_1   |[0m 
+[36mdb_1   |[0m /usr/local/bin/docker-entrypoint.sh: ignoring /docker-entrypoint-initdb.d/*
+[36mdb_1   |[0m 
+[36mdb_1   |[0m 2022-03-13 14:25:06.982 UTC [49] LOG:  received fast shutdown request
+[36mdb_1   |[0m waiting for server to shut down....2022-03-13 14:25:07.042 UTC [49] LOG:  aborting any active transactions
+[36mdb_1   |[0m 2022-03-13 14:25:07.044 UTC [49] LOG:  background worker "logical replication launcher" (PID 56) exited with exit code 1
+[36mdb_1   |[0m 2022-03-13 14:25:07.046 UTC [51] LOG:  shutting down
+[36mdb_1   |[0m 2022-03-13 14:25:07.307 UTC [49] LOG:  database system is shut down
+[36mdb_1   |[0m  done
+[36mdb_1   |[0m server stopped
+[36mdb_1   |[0m 
+[36mdb_1   |[0m PostgreSQL init process complete; ready for start up.
+[36mdb_1   |[0m 
+[36mdb_1   |[0m 2022-03-13 14:25:07.511 UTC [1] LOG:  starting PostgreSQL 14.1 (Debian 14.1-1.pgdg110+1) on x86_64-pc-linux-gnu, compiled by gcc (Debian 10.2.1-6) 10.2.1 20210110, 64-bit
+[36mdb_1   |[0m 2022-03-13 14:25:07.511 UTC [1] LOG:  listening on IPv4 address "0.0.0.0", port 5432
+[36mdb_1   |[0m 2022-03-13 14:25:07.511 UTC [1] LOG:  listening on IPv6 address "::", port 5432
+[36mdb_1   |[0m 2022-03-13 14:25:07.622 UTC [1] LOG:  listening on Unix socket "/var/run/postgresql/.s.PGSQL.5432"
+[36mdb_1   |[0m 2022-03-13 14:25:07.734 UTC [61] LOG:  database system was shut down at 2022-03-13 14:25:07 UTC
+[36mdb_1   |[0m 2022-03-13 14:25:07.783 UTC [1] LOG:  database system is ready to accept connections
+Gracefully stopping... (press Ctrl+C again to force)
