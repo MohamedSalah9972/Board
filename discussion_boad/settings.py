@@ -77,10 +77,10 @@ WSGI_APPLICATION = 'discussion_boad.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': os.getenv('NAME'),
-        'USER': os.getenv('USER'),
-        'PASSWORD': os.getenv('PASSWORD'), 
-        'HOST': os.getenv('HOST'), 
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'postgres', 
+        'HOST': 'db', 
         'PORT': '5432',
 
     }
